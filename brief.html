@@ -1,123 +1,68 @@
 <style>
-
 main {
-
-display: grid;
-
-grid-template-areas:
-
-"headerbrief​ headerbrief​ headerbrief​"
-
-"articlebrief​ articlebrief​ articlebrief​"
-
-"footerbrief​ footerbrief​ footerbrief​";
-
-grid-template-rows: 80px 1fr 70px;
-
-grid-template-columns: 1fr 20% 15%;
-
-grid-row-gap: 0px;
-
-grid-column-gap: 10px;
-
-height: 90vh;
-
-margin: 0;
-
+  display: grid;
+  grid-template-areas:
+  "headerbrief​ headerbrief​ headerbrief​"
+  "articlebrief​ articlebrief​ articlebrief​"
+  "footerbrief​ footerbrief​ footerbrief​";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 1fr 20% 15%;
+  grid-row-gap: 0px;
+  grid-column-gap: 10px;
+  height: 90vh;
+  margin: 0;
 }
 
 headerbrief{
-
-padding: 1.2em;
-
-background: transparent;
-
-border-top: 1px solid black;
-
-border-left: 1px solid black;
-
-border-right: 1px solid black;
-
+  padding: 1.2em
+  background: transparent;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 articlebrief{
-
-padding: 1.2em;
-
-background: transparent;
-
-border-left: 1px solid black;
-
-border-right: 1px solid black;
-
+  padding: 1.2em;
+  background: transparent;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 footerbrief{
-
-padding: 1.2em;
-
-background: transparent;
-
-border-left: 1px solid black;
-
-border-right: 1px solid black;
-
-border-bottom: 1px solid black;
-
-}
+  padding: 1.2em;
+  background: transparent;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  }
 
 #pageHeaderbrief​ {
-
-grid-area: headerbrief​;
-
+  grid-area: headerbrief​;
 }
-
+  
 #pageFooterbrief​ {
-
-grid-area: footerbrief​;
-
+  grid-area: footerbrief​;
 }
-
+  
 #mainArticlebrief​ {
-
-grid-area: articlebrief​;
-
+  grid-area: articlebrief​;
 }
-
-
 
 /* Stack the layout on small devices/viewports. */
-
 @media all and (max-width: 575px) {
-
-main {
-
-grid-template-areas:
-
-"headerbrief​"
-
-"articlebrief​"
-
-"footerbrief​";
-
-grid-template-rows: 80px 1fr 70px 1fr 70px;
-
-grid-template-columns: 1fr;
-
+  main {
+  grid-template-areas:
+  "headerbrief​"
+  "articlebrief​"
+  "footerbrief​";
+  grid-template-rows: 80px 1fr 70px 1fr 70px;
+  grid-template-columns: 1fr;
+  }
 }
-
-}
-
 </style>
-
 <main>
-
 <headerbrief id="pageHeaderbrief"><br><small><span style="font-size:9px;"><span style="font-family:courier new,courier,monospace;"><span style="color: rgb(102, 102, 102);">Vor- und Nachname | Straße und Hausnr. | 108xx Los Santos | User@nmail.de | Tel: Nummer</span></span></span><p style="text-align: center;"><img src="https://abload.de/img/gte5x6bxc9qjr7.png" height="20" width="150" /></p></small>
-
 </headerbrief>
-
 <articlebrief id="mainArticlebrief"><br>Dein text</articlebrief>
-
 <footerbrief id="pageFooterbrief"><span style="font-size:9px;">Mit freundlichen grüßen<br></span><span style="font-size:11px;"><strong>Tobias Toronto</strong></span></footerbrief>
-
 </mainbrief>
